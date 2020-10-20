@@ -12,7 +12,7 @@ public class Main {
             System.out.println("1. Wyświetl gości");
             System.out.println("2. Dodaj gościa");
             System.out.println("3. Wyświetl potrawy");
-            System.out.println("4. Znajdź po id");
+            System.out.println("4. Znajdź gościa po numerze telefonu");
             System.out.println("5. Coś tam");
             System.out.println("6. Wyjście");
 

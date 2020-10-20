@@ -1,7 +1,7 @@
 public class Guest {
     private String name;
     private String meal;
-    private int phoneNumber;
+    private Integer phoneNumber;
     private boolean isVegan;
 
     public Guest(String name, String meal, int phoneNumber, boolean isVegan) {

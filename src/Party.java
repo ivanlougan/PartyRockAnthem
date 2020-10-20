@@ -6,6 +6,7 @@ public class Party {
     private Map<Integer, Guest> phoneToGuest = new HashMap<>();
     Scanner scanner = new Scanner(System.in);
 
+
     public void addGuest() {
         System.out.println("podaj imię gościa");
         String name = scanner.nextLine();
@@ -41,8 +42,13 @@ public class Party {
         System.out.println("podaj numer telefonu");
         Integer phoneNumber = Integer.valueOf(scanner.nextLine());
         Guest guest = phoneToGuest.get(phoneNumber);
+        // handling NullPointerException
+        if (phoneToGuest.containsKey(phoneNumber)) {
+            guest.displayGuestInfrmation();
+        } else {
+            System.out.println("nie ma takiego numeru");
+        }
 
-        guest.displayGuestInfrmation();
     }
 
     public void displayGuests() {
